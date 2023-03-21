@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eleventy Blog</title>
+
+  <link rel="stylesheet" href="{{ '/css/site.css' | url }}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto&display=fallback" rel="stylesheet">
+</head>
+<body>
+<header>
+	<a href="{{ '/' | url }}" class="link--home">Dakota's Blog</a>
+  <div class="nav--links">
+	  <a href="{{ '/About' | url }}" class="link--about">About</a>
+	  <a href="{{ '/portfolio' | url }}" class="link--portfolio">Portfolio</a>
+	  <a href="{{ '/resume' | url }}" class="link--resume">My Resume</a>
+	  <a href="{{ '/ipproject' | url }}" class="link--project">Current Project</a>
+  </div>
+</header>
+<main>
+  {{ content | safe }}
+</main>
+<footer>&copy; My Blog</footer>
+</body>
+</html>
