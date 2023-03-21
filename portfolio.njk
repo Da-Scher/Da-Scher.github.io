@@ -1,22 +1,22 @@
 ---
 layout: base-layout.njk
 pagination:
-  data: collections.post
+  data: collections.flagship
   size: 10
   reverse: true
-  alias: projects
+  alias: firstposts
 ---
-{% for project in projects %}
+{% for project in firstposts %}
   <article>
 
   <h1>
     <a href="{{ project.url | url }}">{{ project.data.title }}</a>
   </h1>
 
-  <time datetime="{{ project.date | dateIso }}">{{ post.date | dateReadable }}</time>
+  <time datetime="{{ project.date | dateIso }}">{{ project.date | dateReadable }}</time>
 
   {% excerpt project %}
 
-  <a href="{{ post.url | url }}">Read more</a>
+  <a href="{{ project.url | url }}">Read more</a>
   </article>
 {% endfor %}
