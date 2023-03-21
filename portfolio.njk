@@ -1,0 +1,22 @@
+---
+layout: base-layout.njk
+pagination:
+  data: collections.post
+  size: 10
+  reverse: true
+  alias: projects
+---
+{% for project in projects %}
+  <article>
+
+  <h1>
+    <a href="{{ project.url | url }}">{{ project.data.title }}</a>
+  </h1>
+
+  <time datetime="{{ project.date | dateIso }}">{{ post.date | dateReadable }}</time>
+
+  {% excerpt project %}
+
+  <a href="{{ post.url | url }}">Read more</a>
+  </article>
+{% endfor %}
