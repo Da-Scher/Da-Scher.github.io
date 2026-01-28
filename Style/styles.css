@@ -1,0 +1,74 @@
+:root {
+  --light-color: #fffed5;
+  --darkest-color:  #111111;
+  --dark-color: #1c1c1c;
+  --light-background-color: #fee402;
+  --dark-background-color: #fdca00;
+}
+
+/* Add a mono Nerd Font for programming snippets and cool icons. */
+@font-face {
+  font-family: 'DepartureMonoNerdFont';
+  src: url('../Assets/DepartureMonoNerdFont/DepartureMonoNerdFont-Regular.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 2vh;
+}
+
+header {
+  position: fixed;
+  top: 0vh;
+  height: 5vh;
+  margin-top: 2vh;
+  margin-right: 2vh;
+  width: 100%;
+}
+
+nav {
+  font-family: 'DepartureMonoNerdFont', monospace;
+  display: flex;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+/* nav ul li::after {
+  content: "\00a0";
+}
+*/
+nav li a {
+  font-family: 'DepartureMonoNerdFont', monospace;
+  font-size: 1.8rem;
+  color: var(--dark-color);
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 1vh;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.15rem;
+}
+
+.nerd {
+  line-height: 1;
+}
+
+.label {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#nav-external {
+  display: inline-flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+main {
+  margin-top: 10vh;
+}

@@ -9,3 +9,11 @@ this class.
 
 ### 1-27-2026
 Starting from scratch and getting a bare-bones single static webpage going.
+
+I don't know how best to layout a simple html project. AFAIK, index is in the root,
+CSS is in `Styles/` and any assets are in `Assets/`: So that is what I'm gonna
+do.
+
+I got through most of setting up the navigation bar with nerd fonts for the icons.
+
+### 1-28-2026
